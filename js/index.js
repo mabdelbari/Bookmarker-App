@@ -9,7 +9,7 @@ var modalBody = document.getElementById('modalBody');
 var bookmarks = [];
 
 var siteNameRegex = /^\w{3}(\w*\-*\s*\w+)*$/;
-var siteUrlRegex = /^http[s]?:\/\/[\w\-]{1,}(\.[a-z]{2,}){1,2}(\/[\w\-%=\.&?]*)*$/i;
+var siteUrlRegex = /^http[s]?:\/\/[\w\-]{1,}(\.[\w\-]{2,}){1,3}(\/[\w\-%=\.&?]*)*$/i;
 
 
 // Check if Localstorage has already data to display 
