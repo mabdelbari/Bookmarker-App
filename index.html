@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookmark</title>
+    <!-- favicon -->
+    <link rel="icon" href="images/bookmarkicon.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap Framework -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="css/bootstrap-icons.min.css">
+    <!-- FontAwesome Library -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Main StyleSheets -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="container d-flex flex-column align-items-center">
+            <h1 class="my-5 text-white">Bookmarker</h1>
+
+            <div class="inputsWrapper rounded-4 shadow p-4 my-5 w-100 d-flex flex-column align-items-center text-white">
+                <h4 class="mb-5 text-center">
+                    <i class="fa-solid fa-bookmark"></i>
+                    Bookmark your favorite sites
+                    <i class="fa-solid fa-bookmark"></i>
+                </h4>
+                <div class="w-100">
+                    <label for="siteName"><i class="fa-solid fa-book-bookmark pe-2"></i>Site Name</label>
+                    <input type="text" class="form-control my-3" id="siteName">
+                </div>
+
+                <div class="w-100">
+                    <label for="siteUrl"><i class="fa-solid fa-link pe-2"></i>Site URL</label>
+                    <input type="text" class="form-control my-3" id="siteUrl">
+                </div>
+
+                <button onclick="submitBookmark();" class="btn btn-submit mt-3 px-5">Submit</button>
+            </div>
+
+
+            <table class="table text-center">
+                <tbody id="tableBody" class="text-white"></tbody>
+            </table>
+
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog start-50 top-50 m-0 translate-middle">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <div class="circles d-flex">
+                                <span class="circle rounded-circle"></span>
+                                <span class="circle mx-2 rounded-circle"></span>
+                                <span class="circle rounded-circle"></span>
+                            </div>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="modalBody"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/* #5372F0 */
+
+::selection {
+    background-color: #4FC0D0;
+
+}
+
+body {
+    background-color: #164B60;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+h1 {
+    font-family: "Pacifico", cursive;
+    font-size: 3rem;
+    position: relative;
+}
+
+h1::after {
+    content: "";
+    height: 35%;
+    background-color: #4FC0D0;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+h1:hover::after {
+    height: 75%;
+}
+
+h4 {
+    font-family: "Righteous", cursive;
+    background-image: linear-gradient(90deg, #4FC0D0, #A2FF86);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+
+}
+
+h4::selection {
+    color: #A2FF86;
+}
+
+.form-control:focus {
+    border-color: #4FC0D0;
+    box-shadow: 0 0 0 0.15rem rgb(79, 192, 208, 0.6);
+}
+
+.inputsWrapper {
+    background-color: #1B6B93;
+}
+
+.btn-submit {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #4FC0D0;
+    --bs-btn-border-color: #4FC0D0;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #4fc1d0b5;
+    --bs-btn-hover-border-color: #4fc1d0b5;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: transparent;
+    --bs-btn-active-border-color: #4fc1d0b5;
+}
+
+.btn-visit {
+    --bs-btn-color: #000;
+    --bs-btn-bg: #A2FF86;
+    --bs-btn-border-color: #A2FF86;
+    --bs-btn-hover-color: #000;
+    --bs-btn-hover-bg: #7bc365;
+    --bs-btn-hover-border-color: #7bc365;
+    --bs-btn-focus-shadow-rgb: 225, 83, 97;
+    --bs-btn-active-color: #000;
+    --bs-btn-active-bg: #74b85f;
+    --bs-btn-active-border-color: #74b85f;
+}
+
+table {
+    vertical-align: middle !important;
+    border-collapse: separate;
+    border-spacing: 0 20px;
+}
+
+table tbody tr {
+    border: 1px solid transparent;
+}
+
+table tbody tr td {
+    background-color: #1B6B93 !important;
+    color: white !important;
+}
+
+table tbody tr td:nth-child(1) {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+table tbody tr td:nth-child(4) {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+table tbody tr td:is(:nth-child(3), :nth-child(4)) {
+    width: 15%;
+}
+
+.circles .circle {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.circles .circle:nth-child(1) {
+    background-color: #F15F5D;
+}
+
+.circles .circle:nth-child(2) {
+    background-color: #FEBE2E;
+}
+
+.circles .circle:nth-child(3) {
+    background-color: #4DB748;
+}
